@@ -26,7 +26,7 @@ jobs:
 
     - name: Compile with Nuitka
       run: |
-        nuitka --onefile --standalone --output-dir=dist main.py
+        nuitka --onefile --standalone --output-dir=dist --yes main.py
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
